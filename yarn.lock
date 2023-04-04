@@ -1958,6 +1958,7 @@ __metadata:
     "@types/aws-lambda": ^8.10.114
     aws-cdk-lib: 2.50.0
     aws-sdk: ^2.1349.0
+    sample: 1.0.0
     typescript: ^5.0.3
     vitest: ^0.29.8
   languageName: unknown
@@ -10508,7 +10509,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sample@workspace:packages/sample-package":
+"sample@1.0.0, sample@workspace:packages/sample-package":
   version: 0.0.0-use.local
   resolution: "sample@workspace:packages/sample-package"
   languageName: unknown
