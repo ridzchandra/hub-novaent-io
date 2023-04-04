@@ -1,0 +1,12 @@
+{
+	"name": "hub-novaent-io",
+	"version": "3.0.0",
+	"private": true,
+	"workspaces": [
+		"services/*",
+		"packages/*"
+	],
+	"devDependencies": {
+		"lerna": "^3.22.1"
+	}
+}
