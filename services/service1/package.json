@@ -20,6 +20,7 @@
 	},
 	"dependencies": {
 		"@serverless-stack/node": "^1.18.4",
-		"aws-sdk": "^2.1349.0"
+		"aws-sdk": "^2.1349.0",
+		"sample": "1.0.0"
 	}
 }
