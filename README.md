@@ -24,8 +24,8 @@ The structure is as folows:
         index.js
       test/
         sample.test.js
-      shared/
-        index.js
+    shared/
+      index.js
 ```
 
 We are using yarn workspaces. So all dependencies are hoisted at the root in `/node_modules`. No other `node_modules` directory will/should be present in any of the other packages in our repo. We are using Lerna for managing different packages in our monorepo and their dependencies. Each service is it's own package.
