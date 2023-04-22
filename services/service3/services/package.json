@@ -1,0 +1,13 @@
+{
+  "name": "@sst-rest-api-postgresql/services",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "aws-sdk": "^2.1362.0",
+    "kysely": "^0.24.2",
+    "kysely-data-api": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.114"
+  }
+}
