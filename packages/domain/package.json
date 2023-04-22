@@ -1,0 +1,8 @@
+{
+	"name": "@hub-novaent-io/domain",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"dependencies": {
+		"@serverless-stack/resources": "^1.18.4"
+	}
+}

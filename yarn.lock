@@ -1947,6 +1947,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hub-novaent-io/domain@workspace:packages/domain":
+  version: 0.0.0-use.local
+  resolution: "@hub-novaent-io/domain@workspace:packages/domain"
+  dependencies:
+    "@serverless-stack/resources": ^1.18.4
+  languageName: unknown
+  linkType: soft
+
 "@hub-novaent-io/service1@workspace:services/service1":
   version: 0.0.0-use.local
   resolution: "@hub-novaent-io/service1@workspace:services/service1"
@@ -1958,6 +1966,8 @@ __metadata:
     "@types/aws-lambda": ^8.10.114
     aws-cdk-lib: 2.50.0
     aws-sdk: ^2.1349.0
+    kysely: ^0.24.2
+    kysely-data-api: ^0.2.0
     sample: 1.0.0
     typescript: ^5.0.3
     vitest: ^0.29.8
@@ -1977,6 +1987,14 @@ __metadata:
     aws-sdk: ^2.1349.0
     typescript: ^5.0.3
     vitest: ^0.29.8
+  languageName: unknown
+  linkType: soft
+
+"@hub-novaent-io/shared-stacks@workspace:packages/shared-stacks":
+  version: 0.0.0-use.local
+  resolution: "@hub-novaent-io/shared-stacks@workspace:packages/shared-stacks"
+  dependencies:
+    "@serverless-stack/resources": ^1.18.4
   languageName: unknown
   linkType: soft
 
@@ -7874,10 +7892,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kysely-data-api@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "kysely-data-api@npm:0.2.0"
+  peerDependencies:
+    "@aws-sdk/client-rds-data": 3.x
+    kysely: 0.x
+  checksum: ba0b49b646ad7e1d9da99725922799b3ad7552519b6ad8893f297a8e8f320e22404f85f17ed2dbe878ec56e553210b12017b7493aee04c5ccbc24425a8a181ea
+  languageName: node
+  linkType: hard
+
 "kysely@npm:^0.21.3":
   version: 0.21.6
   resolution: "kysely@npm:0.21.6"
   checksum: 2b31c075eb66a418be1d0d55a77249081666ef560979d726b2562b17dcaee1c0f982f4b370ac9206383dbdc7f0c296184f3c5de444e7f0bdc85b3385a8183818
+  languageName: node
+  linkType: hard
+
+"kysely@npm:^0.24.2":
+  version: 0.24.2
+  resolution: "kysely@npm:0.24.2"
+  checksum: b45a820c098f60440d6d601aae227cdbb58503a94a71dda928095b0f2cf7205a0b173a0940a36c89b4ff99c95174f223c0ff018c3845c1575fa779a6e297ca93
   languageName: node
   linkType: hard
 
