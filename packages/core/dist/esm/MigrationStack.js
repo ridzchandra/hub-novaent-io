@@ -1,26 +1,6 @@
 /** @format */
 import { RDS } from "sst/constructs";
 export function MigrationStack(_a) {
-    // const script = new Script(stack, "migrationScript", {
-    // 	onCreate: {
-    // 		handler: "services/functions/migrate.handler",
-    // 		copyFiles: [
-    // 			{
-    // 				from: "../../packages/core/migrations",
-    // 				to: "services/migrations",
-    // 			},
-    // 		],
-    // 	},
-    // 	onUpdate: {
-    // 		handler: "services/functions/migrate.handler",
-    // 		copyFiles: [
-    // 			{
-    // 				from: "../../packages/core/migrations",
-    // 				to: "services/migrations",
-    // 			},
-    // 		],
-    // 	},
-    // });
     var stack = _a.stack;
     // Create the Aurora DB cluster
     var cluster = new RDS(stack, "Cluster", {
@@ -35,6 +15,5 @@ export function MigrationStack(_a) {
     });
     return {
         cluster: cluster,
-        // script,
     };
 }
