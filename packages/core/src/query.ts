@@ -1,8 +1,9 @@
 /** @format */
 
-import { db } from "./db.js";
+import { Kysely } from "kysely";
+import { DatabaseSchema } from "./schema";
 
-export const getHitsAndIncrement = async () => {
+export const getHitsAndIncrement = async (db: Kysely<DatabaseSchema>) => {
 	const record = await db
 		.selectFrom("tblcounter")
 		.select("tally")

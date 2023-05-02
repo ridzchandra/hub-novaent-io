@@ -1,7 +1,7 @@
 /** @format */
 
 import { MigrationStack } from "@latest-rest-postgres/core";
-import { Api, use, StackContext } from "sst/constructs";
+import { Api, use, StackContext, RDS } from "sst/constructs";
 
 export function ExampleStack({ stack }: StackContext) {
 	const { cluster } = use(MigrationStack);
@@ -14,7 +14,7 @@ export function ExampleStack({ stack }: StackContext) {
 			},
 		},
 		routes: {
-			"POST /": "services/functions/lambda.handler",
+			"POST /": "functions/lambda.handler",
 		},
 	});
 

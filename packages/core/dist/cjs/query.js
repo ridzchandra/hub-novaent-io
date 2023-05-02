@@ -38,12 +38,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getHitsAndIncrement = void 0;
-var db_js_1 = require("./db.js");
-var getHitsAndIncrement = function () { return __awaiter(void 0, void 0, void 0, function () {
+var getHitsAndIncrement = function (db) { return __awaiter(void 0, void 0, void 0, function () {
     var record, count;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, db_js_1.db
+            case 0: return [4 /*yield*/, db
                     .selectFrom("tblcounter")
                     .select("tally")
                     .where("counter", "=", "hits")
@@ -51,7 +50,7 @@ var getHitsAndIncrement = function () { return __awaiter(void 0, void 0, void 0,
             case 1:
                 record = _a.sent();
                 count = record.tally;
-                return [4 /*yield*/, db_js_1.db
+                return [4 /*yield*/, db
                         .updateTable("tblcounter")
                         .set({
                         tally: ++count,

@@ -1,6 +1,6 @@
 {
 	"extends": "@tsconfig/node16/tsconfig.json",
-	"include": ["stacks", "services/functions"],
+	"include": ["stacks", "functions"],
 	"compilerOptions": {
 		"module": "esnext",
 		"target": "es2017",

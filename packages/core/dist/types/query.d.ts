@@ -1,2 +1,4 @@
 /** @format */
-export declare const getHitsAndIncrement: () => Promise<any>;
+import { Kysely } from "kysely";
+import { DatabaseSchema } from "./schema";
+export declare const getHitsAndIncrement: (db: Kysely<DatabaseSchema>) => Promise<number>;
