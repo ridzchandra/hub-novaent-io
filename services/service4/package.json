@@ -1,5 +1,5 @@
 {
-	"name": "service4",
+	"name": "@hub-novaent-io/service4",
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
@@ -21,7 +21,7 @@
 		"typescript": "^5.0.4"
 	},
 	"dependencies": {
-		"@latest-rest-postgres/core": "workspace:^",
+		"@hub-novaent-io/domain": "workspace:^",
 		"kysely": "^0.24.2",
 		"kysely-data-api": "^0.2.0"
 	}

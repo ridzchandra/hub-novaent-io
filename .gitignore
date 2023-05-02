@@ -5,6 +5,9 @@ node_modules
 .sst
 .build
 
+# package-manager
+.yarn
+
 # misc
 .DS_Store
 

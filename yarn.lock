@@ -3835,11 +3835,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hub-novaent-io/domain@workspace:packages/domain":
+"@hub-novaent-io/domain@workspace:^, @hub-novaent-io/domain@workspace:packages/domain":
   version: 0.0.0-use.local
   resolution: "@hub-novaent-io/domain@workspace:packages/domain"
   dependencies:
-    "@serverless-stack/resources": ^1.18.4
+    "@tsconfig/node16": ^1.0.3
+    "@types/node": ^18.15.13
+    kysely: ^0.24.2
+    npm-run-all: ^4.1.5
+    sst: ^2.5.7
+    typescript: ^5.0.4
+    vitest: ^0.30.1
   languageName: unknown
   linkType: soft
 
@@ -3878,11 +3884,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hub-novaent-io/shared-stacks@workspace:packages/shared-stacks":
+"@hub-novaent-io/service4@workspace:services/service4":
   version: 0.0.0-use.local
-  resolution: "@hub-novaent-io/shared-stacks@workspace:packages/shared-stacks"
+  resolution: "@hub-novaent-io/service4@workspace:services/service4"
   dependencies:
-    "@serverless-stack/resources": ^1.18.4
+    "@hub-novaent-io/domain": "workspace:^"
+    "@tsconfig/node16": ^1.0.3
+    "@types/aws-lambda": ^8.10.114
+    "@types/node": ^18.15.13
+    aws-cdk-lib: 2.72.1
+    constructs: 10.1.156
+    kysely: ^0.24.2
+    kysely-data-api: ^0.2.0
+    sst: ^2.5.7
+    typescript: ^5.0.4
   languageName: unknown
   linkType: soft
 
@@ -3934,22 +3949,6 @@ __metadata:
   checksum: 0572669f855260808c16fe8f78f5f1b4356463b11d3f2c7c0b5580c8ba1cbf4ae53efe9f627595830856e57dbac2325ac17eb0c3dd0ec42102e6f227cc289c02
   languageName: node
   linkType: hard
-
-"@latest-rest-postgres/core@workspace:^, @latest-rest-postgres/core@workspace:packages/core":
-  version: 0.0.0-use.local
-  resolution: "@latest-rest-postgres/core@workspace:packages/core"
-  dependencies:
-    "@tsconfig/node16": ^1.0.3
-    "@types/node": ^18.15.13
-    aws-sdk: ^2.1369.0
-    kysely: ^0.24.2
-    kysely-data-api: ^0.2.0
-    npm-run-all: ^4.1.5
-    sst: ^2.5.7
-    typescript: ^5.0.4
-    vitest: ^0.30.1
-  languageName: unknown
-  linkType: soft
 
 "@lerna/add@npm:3.21.0":
   version: 3.21.0
@@ -6024,7 +6023,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1326.0, aws-sdk@npm:^2.1329.0, aws-sdk@npm:^2.1362.0":
+"aws-sdk@npm:^2.1326.0, aws-sdk@npm:^2.1329.0":
   version: 2.1363.0
   resolution: "aws-sdk@npm:2.1363.0"
   dependencies:
@@ -6039,24 +6038,6 @@ __metadata:
     uuid: 8.0.0
     xml2js: 0.5.0
   checksum: c5833b1652d5852c18ac43c5fe66b31ad5f9834d1fd9223dba7f497961008176f625124a33911f489aae4208cadbad3c61fe22ad6ace34e9425439efb6a03af7
-  languageName: node
-  linkType: hard
-
-"aws-sdk@npm:^2.1369.0":
-  version: 2.1369.0
-  resolution: "aws-sdk@npm:2.1369.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    util: ^0.12.4
-    uuid: 8.0.0
-    xml2js: 0.5.0
-  checksum: ba24a2daf9f9e43eec27a640ebe81c4c2476ee305c111af34de4c5a0293c76155b8cc700c9af86d812d0e42b926d695b688bb96959c0d1bed665d468985a9f4f
   languageName: node
   linkType: hard
 
@@ -13947,41 +13928,6 @@ __metadata:
   checksum: af57fc13be40d90a12562e98c0b7855cf6e8bd4c107fe9a45c212bf023058d54a1871b1c89511c3958f70626fff47faeb795f5d83f8cf88514dbaeb2b724464d
   languageName: node
   linkType: hard
-
-"service3@workspace:services/service3":
-  version: 0.0.0-use.local
-  resolution: "service3@workspace:services/service3"
-  dependencies:
-    "@serverless-stack/cli": ^1.18.4
-    "@serverless-stack/node": ^1.18.4
-    "@serverless-stack/resources": ^1.18.4
-    "@tsconfig/node16": ^1.0.3
-    "@types/aws-lambda": ^8.10.114
-    aws-cdk-lib: 2.50.0
-    aws-sdk: ^2.1362.0
-    kysely: ^0.24.2
-    kysely-data-api: ^0.2.0
-    typescript: ^5.0.4
-    vitest: ^0.30.1
-  languageName: unknown
-  linkType: soft
-
-"service4@workspace:services/service4":
-  version: 0.0.0-use.local
-  resolution: "service4@workspace:services/service4"
-  dependencies:
-    "@latest-rest-postgres/core": "workspace:^"
-    "@tsconfig/node16": ^1.0.3
-    "@types/aws-lambda": ^8.10.114
-    "@types/node": ^18.15.13
-    aws-cdk-lib: 2.72.1
-    constructs: 10.1.156
-    kysely: ^0.24.2
-    kysely-data-api: ^0.2.0
-    sst: ^2.5.7
-    typescript: ^5.0.4
-  languageName: unknown
-  linkType: soft
 
 "set-blocking@npm:^2.0.0, set-blocking@npm:~2.0.0":
   version: 2.0.0

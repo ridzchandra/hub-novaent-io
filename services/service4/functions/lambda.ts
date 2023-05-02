@@ -1,9 +1,6 @@
 /** @format */
 
-import {
-	DatabaseSchema,
-	getHitsAndIncrement,
-} from "@latest-rest-postgres/core";
+import { DatabaseSchema, getHitsAndIncrement } from "@hub-novaent-io/domain";
 import { Kysely } from "kysely";
 import { DataApiDialect } from "kysely-data-api";
 import { RDSData } from "@aws-sdk/client-rds-data";

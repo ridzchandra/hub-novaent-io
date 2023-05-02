@@ -2,7 +2,7 @@
 
 import { SSTConfig } from "sst";
 import { ExampleStack } from "./stacks/ExampleStack";
-import { MigrationStack } from "@latest-rest-postgres/core";
+import { MigrationStack } from "@hub-novaent-io/domain";
 
 export default {
 	config(_input) {

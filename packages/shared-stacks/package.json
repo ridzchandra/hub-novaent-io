@@ -1,8 +1,0 @@
-{
-	"name": "@hub-novaent-io/shared-stacks",
-	"version": "1.0.0",
-	"main": "index.js",
-	"dependencies": {
-		"@serverless-stack/resources": "^1.18.4"
-	}
-}

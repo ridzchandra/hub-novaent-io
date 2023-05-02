@@ -1,7 +1,7 @@
 /** @format */
 
-import { MigrationStack } from "@latest-rest-postgres/core";
-import { Api, use, StackContext, RDS } from "sst/constructs";
+import { MigrationStack } from "@hub-novaent-io/domain";
+import { Api, use, StackContext } from "sst/constructs";
 
 export function ExampleStack({ stack }: StackContext) {
 	const { cluster } = use(MigrationStack);
