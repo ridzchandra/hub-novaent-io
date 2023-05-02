@@ -16,3 +16,4 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @format */
 __exportStar(require("./MigrationStack.js"), exports);
+__exportStar(require("./query.js"), exports);

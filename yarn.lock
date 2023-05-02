@@ -3941,6 +3941,9 @@ __metadata:
   dependencies:
     "@tsconfig/node16": ^1.0.3
     "@types/node": ^18.15.13
+    aws-sdk: ^2.1369.0
+    kysely: ^0.24.2
+    kysely-data-api: ^0.2.0
     npm-run-all: ^4.1.5
     sst: ^2.5.7
     typescript: ^5.0.4
@@ -6036,6 +6039,24 @@ __metadata:
     uuid: 8.0.0
     xml2js: 0.5.0
   checksum: c5833b1652d5852c18ac43c5fe66b31ad5f9834d1fd9223dba7f497961008176f625124a33911f489aae4208cadbad3c61fe22ad6ace34e9425439efb6a03af7
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.1369.0":
+  version: 2.1369.0
+  resolution: "aws-sdk@npm:2.1369.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    util: ^0.12.4
+    uuid: 8.0.0
+    xml2js: 0.5.0
+  checksum: ba24a2daf9f9e43eec27a640ebe81c4c2476ee305c111af34de4c5a0293c76155b8cc700c9af86d812d0e42b926d695b688bb96959c0d1bed665d468985a9f4f
   languageName: node
   linkType: hard
 
